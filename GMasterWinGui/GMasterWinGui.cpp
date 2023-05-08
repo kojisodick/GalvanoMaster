@@ -12,6 +12,7 @@
 #include "GMGraphicArea.h"
 #include "PlRegister.h"
 
+
 GMasterWinGui::GMasterWinGui(QWidget *parent)
     : QMainWindow(parent)
 {
