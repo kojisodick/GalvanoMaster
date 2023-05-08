@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1CDE2CA9-7997-4AFD-942C-5840B7F2D3C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GMasterWinSim</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)cpu0_app\src;$(ProjectDir)cpu0_app\src\common;$(ProjectDir)cpu0_app\src\component;$(ProjectDir)cpu0_app\src\logger;$(ProjectDir)cpu0_app\src\motion;$(ProjectDir)cpu0_app\src\pl;$(ProjectDir)cpu0_app\src\sharedmemory;$(ProjectDir)cpu0_app\src\skywriting;$(ProjectDir)cpu1_app\src\;$(ProjectDir)cpu1_app\src\\SharedMemory;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;WIN_MASTER_SIMULATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)cpu0_app\src;$(ProjectDir)cpu0_app\src\common;$(ProjectDir)cpu0_app\src\component;$(ProjectDir)cpu0_app\src\logger;$(ProjectDir)cpu0_app\src\motion;$(ProjectDir)cpu0_app\src\pl;$(ProjectDir)cpu0_app\src\sharedmemory;$(ProjectDir)cpu0_app\src\skywriting;$(ProjectDir)cpu1_app\src;$(ProjectDir)cpu1_app\src\sharedmemory;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;WIN32;WIN64;_CRT_SECURE_NO_WARNINGS;WIN_MASTER_SIMULATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)cpu0_app\src;$(ProjectDir)cpu0_app\src\common;$(ProjectDir)cpu0_app\src\component;$(ProjectDir)cpu0_app\src\logger;$(ProjectDir)cpu0_app\src\pl;$(ProjectDir)cpu0_app\src\motion;$(ProjectDir)cpu0_app\src\sharedmemory;$(ProjectDir)cpu0_app\src\skywriting;$(ProjectDir)cpu1_app\src;$(ProjectDir)cpu1_app\src\sharedmemory;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="cpu0_app\src\CommandData.h" />
+    <ClInclude Include="cpu0_app\src\Commands.h" />
+    <ClInclude Include="cpu0_app\src\Common\Common.h" />
+    <ClInclude Include="cpu0_app\src\Common\ErrorCode.h" />
+    <ClInclude Include="cpu0_app\src\Common\PlDef.h" />
+    <ClInclude Include="cpu0_app\src\Common\SharedMemory.h" />
+    <ClInclude Include="cpu0_app\src\Common\smath.h" />
+    <ClInclude Include="cpu0_app\src\Common\SystemDef.h" />
+    <ClInclude Include="cpu0_app\src\Common\TypeDef.h" />
+    <ClInclude Include="cpu0_app\src\Component\Component.h" />
+    <ClInclude Include="cpu0_app\src\Component\Gathering.h" />
+    <ClInclude Include="cpu0_app\src\Component\Laser.h" />
+    <ClInclude Include="cpu0_app\src\Component\LaserIO.h" />
+    <ClInclude Include="cpu0_app\src\Component\OpticalSystem.h" />
+    <ClInclude Include="cpu0_app\src\Component\Scanner.h" />
+    <ClInclude Include="cpu0_app\src\ListBox.h" />
+    <ClInclude Include="cpu0_app\src\ListBoxManager.h" />
+    <ClInclude Include="cpu0_app\src\Logger\Fatfs.h" />
+    <ClInclude Include="cpu0_app\src\Logger\Logger.h" />
+    <ClInclude Include="cpu0_app\src\Logger\Uart.h" />
+    <ClInclude Include="cpu0_app\src\Message.h" />
+    <ClInclude Include="cpu0_app\src\MotionManager.h" />
+    <ClInclude Include="cpu0_app\src\Motion\Motion.h" />
+    <ClInclude Include="cpu0_app\src\Motion\MotionArc.h" />
+    <ClInclude Include="cpu0_app\src\Motion\MotionControl.h" />
+    <ClInclude Include="cpu0_app\src\Motion\MotionLinear.h" />
+    <ClInclude Include="cpu0_app\src\Motion\MotionWait.h" />
+    <ClInclude Include="cpu0_app\src\Platform0.h" />
+    <ClInclude Include="cpu0_app\src\Platform0Win.h" />
+    <ClInclude Include="cpu0_app\src\PlMotionBlock.h" />
+    <ClInclude Include="cpu0_app\src\PL\PlBlockStructure.h" />
+    <ClInclude Include="cpu0_app\src\PL\PlRegister.h" />
+    <ClInclude Include="cpu0_app\src\Queue.h" />
+    <ClInclude Include="cpu0_app\src\Queue2.h" />
+    <ClInclude Include="cpu0_app\src\Server.h" />
+    <ClInclude Include="cpu0_app\src\ServerWin.h" />
+    <ClInclude Include="cpu0_app\src\SharedMemory\SharedMemory0.h" />
+    <ClInclude Include="cpu0_app\src\SharedMemory\ShmCommand.h" />
+    <ClInclude Include="cpu0_app\src\SharedMemory\ShmCommandArea.h" />
+    <ClInclude Include="cpu0_app\src\SharedMemory\ShmDataArea.h" />
+    <ClInclude Include="cpu0_app\src\SharedMemory\ShmStatusArea.h" />
+    <ClInclude Include="cpu0_app\src\SkyWriting\SkyWriting.h" />
+    <ClInclude Include="cpu0_app\src\SkyWriting\SkyWritingMode1.h" />
+    <ClInclude Include="cpu0_app\src\SkyWriting\SkyWritingMode2.h" />
+    <ClInclude Include="cpu0_app\src\SkyWriting\SkyWritingMode3.h" />
+    <ClInclude Include="cpu1_app\src\Dpram.h" />
+    <ClInclude Include="cpu1_app\src\Gathering1.h" />
+    <ClInclude Include="cpu1_app\src\GlobalStatus.h" />
+    <ClInclude Include="cpu1_app\src\Platform1.h" />
+    <ClInclude Include="cpu1_app\src\SharedMemory\SharedMemory1.h" />
+    <ClInclude Include="cpu1_app\src\SharedMemory\ShmCmdManager1.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpu0_app\src\Commands.cpp" />
+    <ClCompile Include="cpu0_app\src\Common\SharedMemory.cpp" />
+    <ClCompile Include="cpu0_app\src\Component\Component.cpp" />
+    <ClCompile Include="cpu0_app\src\Component\Gathering.cpp" />
+    <ClCompile Include="cpu0_app\src\Component\Laser.cpp" />
+    <ClCompile Include="cpu0_app\src\Component\LaserIO.cpp" />
+    <ClCompile Include="cpu0_app\src\Component\OpticalSystem.cpp" />
+    <ClCompile Include="cpu0_app\src\Component\Scanner.cpp" />
+    <ClCompile Include="cpu0_app\src\CtrlCommands.cpp" />
+    <ClCompile Include="cpu0_app\src\ListBox.cpp" />
+    <ClCompile Include="cpu0_app\src\ListBoxManager.cpp" />
+    <ClCompile Include="cpu0_app\src\ListCommands.cpp" />
+    <ClCompile Include="cpu0_app\src\Logger\Fatfs.cpp" />
+    <ClCompile Include="cpu0_app\src\Logger\Uart.cpp" />
+    <ClCompile Include="cpu0_app\src\main_0.cpp" />
+    <ClCompile Include="cpu0_app\src\MotionManager.cpp" />
+    <ClCompile Include="cpu0_app\src\Motion\Motion.cpp" />
+    <ClCompile Include="cpu0_app\src\Motion\MotionArc.cpp" />
+    <ClCompile Include="cpu0_app\src\Motion\MotionControl.cpp" />
+    <ClCompile Include="cpu0_app\src\Motion\MotionLinear.cpp" />
+    <ClCompile Include="cpu0_app\src\Motion\MotionWait.cpp" />
+    <ClCompile Include="cpu0_app\src\Platform0.cpp" />
+    <ClCompile Include="cpu0_app\src\Platform0Win.cpp" />
+    <ClCompile Include="cpu0_app\src\PlatformZynq.cpp" />
+    <ClCompile Include="cpu0_app\src\PL\PlRegister.cpp" />
+    <ClCompile Include="cpu0_app\src\Server.cpp" />
+    <ClCompile Include="cpu0_app\src\ServerLwip.cpp" />
+    <ClCompile Include="cpu0_app\src\ServerWin.cpp" />
+    <ClCompile Include="cpu0_app\src\SharedMemory\SharedMemory0.cpp" />
+    <ClCompile Include="cpu0_app\src\SharedMemory\ShmCommandArea.cpp" />
+    <ClCompile Include="cpu0_app\src\SharedMemory\ShmDataArea.cpp" />
+    <ClCompile Include="cpu0_app\src\SkyWriting\SkyWriting.cpp" />
+    <ClCompile Include="cpu0_app\src\SkyWriting\SkyWritingMode1.cpp" />
+    <ClCompile Include="cpu0_app\src\SkyWriting\SkyWritingMode2.cpp" />
+    <ClCompile Include="cpu0_app\src\SkyWriting\SkyWritingMode3.cpp" />
+    <ClCompile Include="cpu1_app\src\Dpram.cpp" />
+    <ClCompile Include="cpu1_app\src\Gathering1.cpp" />
+    <ClCompile Include="cpu1_app\src\main_1.cpp" />
+    <ClCompile Include="cpu1_app\src\Platform1.cpp" />
+    <ClCompile Include="cpu1_app\src\Platform1Zynq.cpp" />
+    <ClCompile Include="cpu1_app\src\SharedMemory\SharedMemory1.cpp" />
+    <ClCompile Include="cpu1_app\src\SharedMemory\ShmCmdManager1.cpp" />
+    <ClCompile Include="GMasterWinSim.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

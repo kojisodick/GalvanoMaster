@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>GMasterWinGuiClass</class>
+ <widget class="QWidget" name="GMasterWinGuiClass" >
+  <property name="objectName" >
+   <string notr="true">GMasterWinGuiClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>GMasterWinGui</string>
+  </property>$centralwidget$
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="GMasterWinGui.qrc"/>
+ </resources>
+ <connections/>
+</UI>

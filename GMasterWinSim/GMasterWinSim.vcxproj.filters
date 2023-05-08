@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\cpu0">
+      <UniqueIdentifier>{8f93edf0-3031-4a2c-84c5-81826b082719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu1">
+      <UniqueIdentifier>{1ef071ec-fdb4-42c1-900f-4164bcd7f39e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu0\Common">
+      <UniqueIdentifier>{189c7246-9fbf-4333-a3ed-043aaecfbb38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu0\Component">
+      <UniqueIdentifier>{33bc651a-cabf-46b0-96a0-1ec95db84f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu0\Logger">
+      <UniqueIdentifier>{c2775cc0-8cbc-4fac-a54b-67f2dbfe0e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu1\SharedMemory">
+      <UniqueIdentifier>{ecf3c27d-0b46-4ca5-8a06-83ee853ff2f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu0\SharedMemory">
+      <UniqueIdentifier>{3a651193-c06e-4477-9b91-458bb638706b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu0\PL">
+      <UniqueIdentifier>{946828e3-d23a-4353-8c0c-d6d9d40de343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu0\SkyWriting">
+      <UniqueIdentifier>{b7563290-97fe-4252-b749-0cc10ad21ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu0\Motion">
+      <UniqueIdentifier>{5a108002-323b-4011-b54e-70b0ed7a3915}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\CommandData.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Commands.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\ListBox.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\ListBoxManager.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Message.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\PlMotionBlock.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Queue.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Server.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Common\Common.h">
+      <Filter>Source Files\cpu0\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Common\ErrorCode.h">
+      <Filter>Source Files\cpu0\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Common\PlDef.h">
+      <Filter>Source Files\cpu0\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Common\smath.h">
+      <Filter>Source Files\cpu0\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Common\SystemDef.h">
+      <Filter>Source Files\cpu0\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Common\TypeDef.h">
+      <Filter>Source Files\cpu0\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Component\Component.h">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Component\Gathering.h">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Component\Laser.h">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Component\LaserIO.h">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Component\OpticalSystem.h">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Component\Scanner.h">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Logger\Fatfs.h">
+      <Filter>Source Files\cpu0\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Logger\Logger.h">
+      <Filter>Source Files\cpu0\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Logger\Uart.h">
+      <Filter>Source Files\cpu0\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu1_app\src\Dpram.h">
+      <Filter>Source Files\cpu1</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu1_app\src\GlobalStatus.h">
+      <Filter>Source Files\cpu1</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu1_app\src\SharedMemory\SharedMemory1.h">
+      <Filter>Source Files\cpu1\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SharedMemory\SharedMemory0.h">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SharedMemory\ShmCommand.h">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\MotionManager.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu1_app\src\SharedMemory\ShmCmdManager1.h">
+      <Filter>Source Files\cpu1\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu1_app\src\Gathering1.h">
+      <Filter>Source Files\cpu1</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\PL\PlBlockStructure.h">
+      <Filter>Source Files\cpu0\PL</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\PL\PlRegister.h">
+      <Filter>Source Files\cpu0\PL</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Platform0.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu1_app\src\Platform1.h">
+      <Filter>Source Files\cpu1</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SkyWriting\SkyWriting.h">
+      <Filter>Source Files\cpu0\SkyWriting</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SkyWriting\SkyWritingMode1.h">
+      <Filter>Source Files\cpu0\SkyWriting</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SkyWriting\SkyWritingMode2.h">
+      <Filter>Source Files\cpu0\SkyWriting</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SkyWriting\SkyWritingMode3.h">
+      <Filter>Source Files\cpu0\SkyWriting</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Motion\Motion.h">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Motion\MotionArc.h">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Motion\MotionControl.h">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Motion\MotionLinear.h">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Motion\MotionWait.h">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Platform0Win.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\ServerWin.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Common\SharedMemory.h">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SharedMemory\ShmCommandArea.h">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SharedMemory\ShmDataArea.h">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\SharedMemory\ShmStatusArea.h">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu0_app\src\Queue2.h">
+      <Filter>Source Files\cpu0</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GMasterWinSim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Commands.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\CtrlCommands.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\ListBox.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\ListBoxManager.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\ListCommands.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Server.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\ServerLwip.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Component\Component.cpp">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Component\Gathering.cpp">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Component\Laser.cpp">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Component\LaserIO.cpp">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Component\OpticalSystem.cpp">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Component\Scanner.cpp">
+      <Filter>Source Files\cpu0\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Logger\Fatfs.cpp">
+      <Filter>Source Files\cpu0\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Logger\Uart.cpp">
+      <Filter>Source Files\cpu0\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu1_app\src\Dpram.cpp">
+      <Filter>Source Files\cpu1</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu1_app\src\SharedMemory\SharedMemory1.cpp">
+      <Filter>Source Files\cpu1\SharedMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\SharedMemory\SharedMemory0.cpp">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\MotionManager.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu1_app\src\SharedMemory\ShmCmdManager1.cpp">
+      <Filter>Source Files\cpu1\SharedMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu1_app\src\Gathering1.cpp">
+      <Filter>Source Files\cpu1</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\PL\PlRegister.cpp">
+      <Filter>Source Files\cpu0\PL</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\main_0.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu1_app\src\main_1.cpp">
+      <Filter>Source Files\cpu1</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu1_app\src\Platform1Zynq.cpp">
+      <Filter>Source Files\cpu1</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\SkyWriting\SkyWritingMode1.cpp">
+      <Filter>Source Files\cpu0\SkyWriting</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\SkyWriting\SkyWritingMode2.cpp">
+      <Filter>Source Files\cpu0\SkyWriting</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\SkyWriting\SkyWritingMode3.cpp">
+      <Filter>Source Files\cpu0\SkyWriting</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\SkyWriting\SkyWriting.cpp">
+      <Filter>Source Files\cpu0\SkyWriting</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Motion\Motion.cpp">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Motion\MotionArc.cpp">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Motion\MotionControl.cpp">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Motion\MotionLinear.cpp">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Motion\MotionWait.cpp">
+      <Filter>Source Files\cpu0\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu1_app\src\Platform1.cpp">
+      <Filter>Source Files\cpu1</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Platform0.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Platform0Win.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\PlatformZynq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\ServerWin.cpp">
+      <Filter>Source Files\cpu0</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\SharedMemory\ShmCommandArea.cpp">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\SharedMemory\ShmDataArea.cpp">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu0_app\src\Common\SharedMemory.cpp">
+      <Filter>Source Files\cpu0\SharedMemory</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

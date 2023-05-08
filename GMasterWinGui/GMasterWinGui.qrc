@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/GMasterWinGui">
+        <file>Resource/clear_all_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/restart_alt_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/rotate_right_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/zoom_in_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/zoom_out_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/drag_pan_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/rotate_left_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/print_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/arrow_selector_tool_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/fast_forward_FILL0_wght400_GRAD0_opsz48.png</file>
+        <file>Resource/fast_rewind_FILL0_wght400_GRAD0_opsz48.png</file>
+    </qresource>
+</RCC>
